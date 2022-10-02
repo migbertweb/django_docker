@@ -9,4 +9,8 @@
 
 ---
 
-**se utilizan Python, Docker, Postgres y Nginx**
+Se configura Django para que se ejecute en Docker con Postgres. Para entornos de
+producción, agregamos Nginx y Gunicorn. También se sirven archivos multimedia y
+estáticos de Django a través de Nginx.
+
+---
