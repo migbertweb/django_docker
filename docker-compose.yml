@@ -20,7 +20,7 @@ services:
     ports:
       - 3306:3306
     environment:
-      # - MYSQL_ROOT_PASSWORD=mypass
+      - MYSQL_ROOT_PASSWORD=hello_django
       # - MYSQL_ROOT_USER=root
       - MYSQL_DATABASE=hello_django_dev
       - MYSQL_USER=hello_django
