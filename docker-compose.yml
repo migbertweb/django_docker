@@ -14,13 +14,17 @@ services:
     depends_on:
       - db
   db:
-    image: postgres:14.0-alpine
+    image: mariadb:latest
     volumes:
-      - postgres_data:/var/lib/postgresql/data/
+      - mariadb_data:/var/lib/mysql
+    ports:
+      - "3308:3306"
     environment:
-      - POSTGRES_USER=hello_django
-      - POSTGRES_PASSWORD=hello_django
-      - POSTGRES_DB=hello_django_dev
+      # - MYSQL_ROOT_PASSWORD=mypass
+      # - MYSQL_ROOT_USER=root
+      - MYSQL_DATABASE=hello_django_dev
+      - MYSQL_USER=hello_django
+      - MYSQL_PASSWORD=hello_django
 
 volumes:
-  postgres_data:
+  mariadb_data:
