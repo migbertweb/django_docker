@@ -1,0 +1,24 @@
+/* Probar el api e django */
+GET http://localhost:8000/api/
+
+/* traer todos los registros del api*/
+GET http://localhost:8000/api/post/
+
+/* Añadir un nuevo registro */
+POST http://localhost:8000/api/post/
+Content-Type: application/json
+
+{
+    "title": "mi 2do post desde Nvim",
+    "content": "enviado desde Nvim con REST"
+}
+
+/* actualizar con PATCH */
+PUT http://localhost:8000/api/post/2
+Content-Type: application/json
+
+{
+    "title": "mi 2do post desde Nvim",
+    "content": "editado - enviado desde Nvim con REST"
+}
+

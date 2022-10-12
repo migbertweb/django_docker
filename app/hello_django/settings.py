@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = int(os.environ.get("DEBUG", default=0))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-v)=3y85hkih8%$&t=r5psi=+1hvjxvia(c*5)bg8r#h+fuxr_k'
+# SECRET_KEY = 'django-insecure-v)=3y85hc*5)bg8r#h+fuxr_k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "upload",
+    "rest_framework",
+    "post",
 ]
 
 MIDDLEWARE = [
