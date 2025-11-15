@@ -1,3 +1,26 @@
+"""
+Archivo: urls.py
+
+Descripción: Configuración de URLs principales del proyecto. Define las rutas
+             de la aplicación incluyendo el admin de Django, la API REST de posts
+             y la vista de subida de archivos.
+
+Autor: migbertweb
+
+Fecha: 2025-11-15
+
+Repositorio: https://github.com/migbertweb/django_docker
+
+Licencia: MIT License
+
+Uso: Mapea las URLs a sus respectivas vistas. Incluye rutas para:
+     - / (subida de archivos)
+     - /admin/ (panel de administración)
+     - /api/ (API REST de posts)
+
+Nota: Este proyecto usa Licencia MIT. Se recomienda (no obliga) mantener 
+derivados como código libre, especialmente para fines educativos.
+"""
 """hello_django URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:

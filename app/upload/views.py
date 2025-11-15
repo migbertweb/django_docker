@@ -1,3 +1,24 @@
+"""
+Archivo: views.py
+
+Descripción: Vista para la subida de archivos (imágenes y multimedia). Maneja
+             la recepción de archivos mediante POST, los guarda en el sistema
+             de archivos y muestra la URL del archivo subido.
+
+Autor: migbertweb
+
+Fecha: 2025-11-15
+
+Repositorio: https://github.com/migbertweb/django_docker
+
+Licencia: MIT License
+
+Uso: Procesa formularios de subida de archivos. Los archivos se guardan en
+     mediafiles/ y se sirven a través de Nginx en producción o Django en desarrollo.
+
+Nota: Este proyecto usa Licencia MIT. Se recomienda (no obliga) mantener 
+derivados como código libre, especialmente para fines educativos.
+"""
 from django.shortcuts import render
 from django.core.files.storage import FileSystemStorage
 

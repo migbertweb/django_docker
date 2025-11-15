@@ -1,4 +1,24 @@
 #!/usr/bin/env python
+"""
+Archivo: manage.py
+
+Descripción: Script de gestión de Django. Permite ejecutar comandos administrativos
+             como migraciones, creación de superusuarios, servidor de desarrollo, etc.
+
+Autor: migbertweb
+
+Fecha: 2025-11-15
+
+Repositorio: https://github.com/migbertweb/django_docker
+
+Licencia: MIT License
+
+Uso: Punto de entrada principal para comandos de gestión de Django.
+     Ejemplo: python manage.py runserver, python manage.py migrate
+
+Nota: Este proyecto usa Licencia MIT. Se recomienda (no obliga) mantener 
+derivados como código libre, especialmente para fines educativos.
+"""
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
